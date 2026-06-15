@@ -126,6 +126,7 @@ export function PortfolioSection() {
                   <img
                     src={item.image}
                     alt={item.name}
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -146,7 +147,7 @@ export function PortfolioSection() {
                 <div className="p-4">
                   <div
                     className="mb-0.5"
-                    style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.75rem", color: item.color, fontWeight: 600 }}
+                    style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.75rem", color: item.color === "#F59E0B" ? "#B45309" : item.color === "#EC4899" ? "#BE185D" : item.color === "#10B981" ? "#047857" : item.color, fontWeight: 600 }}
                   >
                     {item.category}
                   </div>
@@ -166,7 +167,7 @@ export function PortfolioSection() {
                     className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-green-50"
                   >
                     <span className="text-[#10B981]">📈</span>
-                    <span style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.8125rem", color: "#10B981", fontWeight: 600 }}>
+                    <span style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.8125rem", color: "#047857", fontWeight: 600 }}>
                       {item.result}
                     </span>
                   </div>

@@ -20,7 +20,7 @@ export function Footer() {
                 className="text-white"
                 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: "1.125rem" }}
               >
-                Riva<span className="text-[#2563EB]">Web</span>
+                Riva<span className="text-[#60A5FA]">Web</span>
               </span>
             </div>
             <p
@@ -142,10 +142,10 @@ export function Footer() {
             © 2025 Riva Web Builder. Semua hak dilindungi.
           </span>
           <div className="flex gap-5">
-            {["Kebijakan Privasi", "Syarat & Ketentuan"].map((l) => (
+              {["Kebijakan Privasi", "Syarat & Ketentuan"].map((l) => (
               <button
                 key={l}
-                className="text-slate-500 hover:text-white transition-colors bg-transparent border-none cursor-pointer p-0"
+                className="text-slate-400 hover:text-white transition-colors bg-transparent border-none cursor-pointer p-0"
                 style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.875rem" }}
               >
                 {l}

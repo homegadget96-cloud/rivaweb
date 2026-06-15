@@ -71,6 +71,7 @@ export function Navbar() {
               Konsultasi Gratis →
             </button>
             <button
+              aria-label={isOpen ? "Tutup menu navigasi" : "Buka menu navigasi"}
               className="md:hidden p-2 rounded-lg text-[#1E293B] hover:bg-gray-100 border-none bg-transparent cursor-pointer"
               onClick={() => setIsOpen(!isOpen)}
             >

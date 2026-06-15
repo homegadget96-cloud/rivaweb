@@ -16,16 +16,18 @@ export default function App() {
   return (
     <div className="min-h-screen" style={{ fontFamily: "'Inter', sans-serif" }}>
       <Navbar />
-      <HeroSection />
-      <ProblemSection />
-      <ServicesSection />
-      <PricingSection />
-      <ProcessSection />
-      <PortfolioSection />
-      <TestimonialsSection />
-      <FAQSection />
-      <AboutSection />
-      <ContactSection />
+      <main>
+        <HeroSection />
+        <ProblemSection />
+        <ServicesSection />
+        <PricingSection />
+        <ProcessSection />
+        <PortfolioSection />
+        <TestimonialsSection />
+        <FAQSection />
+        <AboutSection />
+        <ContactSection />
+      </main>
       <Footer />
       <FloatingWhatsApp />
     </div>

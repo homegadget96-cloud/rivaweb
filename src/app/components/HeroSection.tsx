@@ -124,7 +124,7 @@ export function HeroSection() {
               <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-xl">🚀</div>
               <div>
                 <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: "0.875rem", color: "#1E293B" }}>Website Live!</div>
-                <div style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.75rem", color: "#10B981" }}>Dalam 3 Hari Kerja</div>
+                <div style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.75rem", color: "#047857" }}>Dalam 3 Hari Kerja</div>
               </div>
             </div>
 

@@ -156,10 +156,11 @@ export function ContactSection() {
 
                 <div className="grid sm:grid-cols-2 gap-4 mb-4">
                   <div>
-                    <label style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.875rem", fontWeight: 600, color: "#1E293B", display: "block", marginBottom: "0.4rem" }}>
+                    <label htmlFor="kategori" style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.875rem", fontWeight: 600, color: "#1E293B", display: "block", marginBottom: "0.4rem" }}>
                       Kategori Bisnis
                     </label>
                     <select
+                      id="kategori"
                       name="kategori"
                       value={form.kategori}
                       onChange={handleChange}
@@ -172,10 +173,11 @@ export function ContactSection() {
                     </select>
                   </div>
                   <div>
-                    <label style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.875rem", fontWeight: 600, color: "#1E293B", display: "block", marginBottom: "0.4rem" }}>
+                    <label htmlFor="paket" style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.875rem", fontWeight: 600, color: "#1E293B", display: "block", marginBottom: "0.4rem" }}>
                       Paket yang Diminati
                     </label>
                     <select
+                      id="paket"
                       name="paket"
                       value={form.paket}
                       onChange={handleChange}

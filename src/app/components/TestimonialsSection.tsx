@@ -158,7 +158,7 @@ export function TestimonialsSection() {
           </div>
 
           <div className="flex items-center justify-center gap-4 mt-5">
-            <button onClick={prev} className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-colors cursor-pointer">
+            <button onClick={prev} aria-label="Testimoni sebelumnya" className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-colors cursor-pointer">
               <ChevronLeft size={18} />
             </button>
             <div className="flex gap-1.5">
@@ -166,12 +166,13 @@ export function TestimonialsSection() {
                 <button
                   key={i}
                   onClick={() => setCurrent(i)}
+                  aria-label={`Lihat testimoni ${i + 1}`}
                   className="h-2 rounded-full transition-all cursor-pointer border-none"
                   style={{ width: i === current ? "20px" : "8px", background: i === current ? "#2563EB" : "rgba(255,255,255,0.3)" }}
                 />
               ))}
             </div>
-            <button onClick={next} className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-colors cursor-pointer">
+            <button onClick={next} aria-label="Testimoni selanjutnya" className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-colors cursor-pointer">
               <ChevronRight size={18} />
             </button>
           </div>
